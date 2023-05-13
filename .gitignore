@@ -37,6 +37,8 @@ cat_frutas.csv
 cat_ensaladas.csv
 cat_verduras.csv
 
+mercadona_data_transform_fyv.ipynb
+
 categorias_fyv.csv
 productos_fyv.csv
 subcategorias_fyv.csv
