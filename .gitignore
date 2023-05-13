@@ -21,4 +21,26 @@ password.py
 *.h5
 *.parquet
 
+
+
+mercadona_data_scraping_fyv.ipynb
+
+frutas.csv
+ensaladas.csv
+verduras.csv
+
+sub_frutas.csv
+sub_ensaladas.csv
+sub_verduras.csv
+
+cat_frutas.csv
+cat_ensaladas.csv
+cat_verduras.csv
+
+categorias_fyv.csv
+productos_fyv.csv
+subcategorias_fyv.csv
+
+data_to_workbench.ipynb
+
 all_queries.sql
