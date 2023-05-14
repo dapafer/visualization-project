@@ -39,10 +39,8 @@ cat_verduras.csv
 
 mercadona_data_transform_fyv.ipynb
 
-categorias_fyv.csv
-productos_fyv.csv
-subcategorias_fyv.csv
+supermercado_rev_eng.mwb
 
-data_to_workbench.ipynb
+filters.sql
 
 all_queries.sql
