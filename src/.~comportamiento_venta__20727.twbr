@@ -494,7 +494,7 @@
       <column-instance column='[categoria]' derivation='None' name='[none:categoria:nk]' pivot='key' type='nominal' />
       <column-instance column='[producto]' derivation='None' name='[none:producto:nk]' pivot='key' type='nominal' />
       <column-instance column='[subcategoria]' derivation='None' name='[none:subcategoria:nk]' pivot='key' type='nominal' />
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
         <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/comportamiento_venta.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='categorias_E6B0CC37CF74499BB36CD2F5F312E3E9' table='[Extract].[categorias_E6B0CC37CF74499BB36CD2F5F312E3E9]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>

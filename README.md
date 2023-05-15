@@ -1,6 +1,6 @@
 # 📊 **VISUALIZATION project.**
 
-![portada](https://github.com/dapafer/visualization-project/blob/main/images/data_visualization.png)
+![portada](https://github.com/dapafer/visualization-project/blob/main/images/portada.png)
 
 Este proyecto tiene como objetivo realizar un proceso ETL, para posteriormente ejecutar un análisis de datos correspondiente a la estructura de la misma, a través de herramientas de visualización de datos. Para ello, se ha utilizado Tableau para generar visualizaciones acordes a lo que se quiere explicar, y finalizaremos sacando conclusiones.
 
@@ -31,7 +31,7 @@ El proyecto cuenta con los siguientes archivos principales:
 
 ### **Objetivo principal.**
 
-Principalmente, vamos a hacer un Análisis Exploratorio de los Datos (EDA), el cual consistirá en el comportamiento de venta de un supermercado, teniendo los datos de una quincena, concretamente del 1 al 15 de mayo de 2023. Con ello, vamos a sacar conclusiones a través de los datos proporcionados de venta, para analizar varios factores, a mencionar:
+Principalmente, vamos a hacer un Análisis Exploratorio de los Datos (EDA), el cual consistirá en el comportamiento de venta de un supermercado, en la sección de Fruta y Verdura, teniendo los datos de una quincena, concretamente del 1 al 15 de mayo de 2023. Con ello, vamos a sacar conclusiones a través de los datos proporcionados de venta, para analizar varios factores, a mencionar:
 
 - Facturación total por fecha
 - Facturación total por Categoría.
@@ -41,7 +41,7 @@ Principalmente, vamos a hacer un Análisis Exploratorio de los Datos (EDA), el c
 - Facturación total por Producto.
 - Cantidad de venta individual por Categoría.
 
-A continuación, detallamos las visualizaciones más relevantes para poder sacar conclusiones acerca del comportamiento de venta en la mencionada franja de fechas.
+A continuación, detallamos las visualizaciones más relevantes para poder sacar conclusiones acerca del comportamiento de venta en la mencionada sección y franja de fechas.
 
 ---
 <a name="fact_tot"/>
@@ -84,11 +84,21 @@ Aquí se observa el peso relevante de productos de consumo más generalista bajo
 
 <img src='https://github.com/dapafer/visualization-project/blob/main/images/prod_cat.png'/>
 
-*
+Aquí observamos que puede llegar a tener relación la cantidad de facturación total vendida, siendo en este caso cocreto la mostrada en la primera quincena de mayo, con la cantidad de referencias o productos que existen en una categoría concreta, siendo "Verdura" la sección con más referencias, y "Ensaladas" la de menos.
+
+Se puede ver por tanto cierta correlación entre ambas observaciones.
 
 ---
 <a name="conc"/>
 
 ### ❗️ **Conclusiones.**
 
-*
+Podemos concluir con varias hipótesis acerca del comportamiento de venta en un supermercado, con determinadas características:
+- La facturación se concentra más en los fines de semana, concretamente viernes y sábado. Esto puede llegar a tener relación con que son los días que pueden llegar a librar la mayoría de las personas, aprovechando la oportunidad para realizar la compra. Puede haber excepciones, como el día 2 de mayo, cuyo horario de apertura era hasta mediodía, y el 15 de mayo, siendo festivo local de la capital madrileña.
+- También se observa cierta tendencia de venta en base al número de productos que se agrupan en cada una de las categorías globales, siendo las categorías con mayor número de referencias las que más facturan.
+
+Hay que añadir ciertas visualizaciones que no se han detallado aquí, como la facturación por productos en determinadas fechas, donde se observa al filtrar en "sábado" el consumo de ciertos productos característicos, como el Guacamole, debido a la posible existencia de eventos como partidos de fútbol importantes.
+
+Por tanto, había que concluir diciendo que habría que añadir ciertos factores externos, que puede que modifiquen la tendencia de compra de los clientes, como eventos deportivos relevantes, o incluso factores metereológicos, donde si existe en el día bajas temperaturas o precipitaciones, la venta aumenta.
+
+Todo este análisis está referenciado en el enlace del archivo `main.txt`, donde se enlaza con la visualización pública realizada en Tableau.
