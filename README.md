@@ -1,6 +1,6 @@
-# **VISUALIZATION project.**
+# 📊 **VISUALIZATION project.**
 
-![portada](https://github.com/dapafer/visualization-project/images/data_visualization.png)
+![portada](https://github.com/dapafer/visualization-project/blob/main/images/data_visualization.png)
 
 Este proyecto tiene como objetivo realizar un proceso ETL, para posteriormente ejecutar un análisis de datos correspondiente a la estructura de la misma, a través de herramientas de visualización de datos. Para ello, se ha utilizado Tableau para generar visualizaciones acordes a lo que se quiere explicar, y finalizaremos sacando conclusiones.
 
@@ -27,7 +27,7 @@ El proyecto cuenta con los siguientes archivos principales:
 ---
 <a name="obj_princ"/>
 
-### 📊 **Objetivo principal.**
+### **Objetivo principal.**
 Principalmente, vamos a hacer un Análisis Exploratorio de los Datos (EDA), el cual consistirá en el comportamiento de venta de un supermercado, teniendo los datos de una quincena, concretamente del 1 al 15 de mayo de 2023. Con ello, vamos a sacar conclusiones a través de los datos proporcionados de venta, para analizar varios factores, a mencionar:
 
 - Facturación total en la quincena por día.
