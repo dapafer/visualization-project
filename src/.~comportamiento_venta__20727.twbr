@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20231.23.0310.1044                               -->
-<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
@@ -20,6 +20,7 @@
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='comportamiento_venta' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -34,7 +35,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='localhost' name='mysql.1w7hnzk136n7p11a4bmqw0qac5h1'>
-            <connection class='mysql' dbname='supermercado' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+            <connection class='mysql' dbname='supermercado' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.1w7hnzk136n7p11a4bmqw0qac5h1' name='categorias' table='[categorias]' type='table' />
@@ -494,7 +495,7 @@
       <column-instance column='[producto]' derivation='None' name='[none:producto:nk]' pivot='key' type='nominal' />
       <column-instance column='[subcategoria]' derivation='None' name='[none:subcategoria:nk]' pivot='key' type='nominal' />
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/comportamiento_venta.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/15/2023 07:29:15 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/comportamiento_venta.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='categorias_E6B0CC37CF74499BB36CD2F5F312E3E9' table='[Extract].[categorias_E6B0CC37CF74499BB36CD2F5F312E3E9]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='ventas_productos_A5466B9EEEAE416FB2F74D0B4F972FA3' table='[Extract].[ventas_productos_A5466B9EEEAE416FB2F74D0B4F972FA3]' type='table' />
@@ -528,9 +529,6 @@
             <map key='[venta_id (ventas)]' value='[ventas_0133271FDB8F4BFFAB5CA72133CCD53D].[venta_id]' />
             <map key='[venta_id]' value='[ventas_productos_A5466B9EEEAE416FB2F74D0B4F972FA3].[venta_id]' />
           </cols>
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='supermercado' increment-value='%null%' refresh-type='create' rows-inserted='2322' timestamp-start='2023-05-15 19:29:15.123' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>venta_id</remote-name>
@@ -544,7 +542,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>12</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ventas_productos_A5466B9EEEAE416FB2F74D0B4F972FA3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>producto_id</remote-name>
@@ -558,7 +555,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>176</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ventas_productos_A5466B9EEEAE416FB2F74D0B4F972FA3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>cantidad</remote-name>
@@ -572,7 +568,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>81</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ventas_productos_A5466B9EEEAE416FB2F74D0B4F972FA3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>producto_id</remote-name>
@@ -586,7 +581,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>176</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>producto</remote-name>
@@ -601,7 +595,6 @@
               <approx-count>166</approx-count>
               <contains-null>true</contains-null>
               <collation flag='3' name='LROOT_S1' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>formato</remote-name>
@@ -616,7 +609,6 @@
               <approx-count>115</approx-count>
               <contains-null>true</contains-null>
               <collation flag='3' name='LROOT_S1' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>precio</remote-name>
@@ -630,7 +622,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>119</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>subcategoria_id</remote-name>
@@ -644,7 +635,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>18</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>categoria_id</remote-name>
@@ -658,7 +648,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>seccion_id</remote-name>
@@ -672,7 +661,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[productos_405A637D7B7F4738A552147ECF7C13D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>categoria_id</remote-name>
@@ -686,7 +674,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[categorias_E6B0CC37CF74499BB36CD2F5F312E3E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>categoria</remote-name>
@@ -701,7 +688,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='3' name='LROOT_S1' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[categorias_E6B0CC37CF74499BB36CD2F5F312E3E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>seccion_id</remote-name>
@@ -715,7 +701,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[categorias_E6B0CC37CF74499BB36CD2F5F312E3E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>seccion_id</remote-name>
@@ -729,7 +714,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[secciones_503A7A9BE6F34BD4A06A7EE771E506C5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>seccion</remote-name>
@@ -744,7 +728,6 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='3' name='LROOT_S1' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[secciones_503A7A9BE6F34BD4A06A7EE771E506C5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>subcategoria_id</remote-name>
@@ -758,7 +741,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>18</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[subcategorias_8419760D5037473CB48E95B3E0D5DA00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>subcategoria</remote-name>
@@ -773,7 +755,6 @@
               <approx-count>18</approx-count>
               <contains-null>true</contains-null>
               <collation flag='3' name='LROOT_S1' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[subcategorias_8419760D5037473CB48E95B3E0D5DA00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>categoria_id</remote-name>
@@ -787,7 +768,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[subcategorias_8419760D5037473CB48E95B3E0D5DA00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>seccion_id</remote-name>
@@ -801,7 +781,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[subcategorias_8419760D5037473CB48E95B3E0D5DA00]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>venta_id</remote-name>
@@ -815,7 +794,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>12</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ventas_0133271FDB8F4BFFAB5CA72133CCD53D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>fecha</remote-name>
@@ -829,7 +807,6 @@
               <aggregation>Year</aggregation>
               <approx-count>12</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ventas_0133271FDB8F4BFFAB5CA72133CCD53D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>seccion_id</remote-name>
@@ -843,7 +820,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1</approx-count>
               <contains-null>false</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ventas_0133271FDB8F4BFFAB5CA72133CCD53D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -2378,8 +2354,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97960' id='18' param='vert' type-v2='layout-flow' w='98698' x='651' y='1020'>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97960' id='22' param='vert' type-v2='layout-flow' w='98698' x='651' y='1020'>
                 <zone h='29890' id='8' mode='checkdropdown' name='cant_frut' param='[federated.0zhhu8p1s9ewqh1d84ya61fog9z3].[md:fecha:ok]' type-v2='filter' w='13019' x='86330' y='1020'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2472,7 +2448,7 @@
             <zone h='4719' id='3' type-v2='title' w='98698' x='651' y='1020' />
             <zone h='8036' id='4' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98698' x='651' y='5739' />
             <zone h='85205' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98698' x='651' y='13775'>
-              <flipboard active-id='10' nav-type='dot' show-nav-arrows='true'>
+              <flipboard active-id='1' nav-type='dot' show-nav-arrows='true'>
                 <story-points>
                   <story-point captured-sheet='fact_tot' id='1' />
                   <story-point captured-sheet='fact_cat' id='3' />
@@ -2862,7 +2838,7 @@
     </window>
     <window class='dashboard' name='comp_vent'>
       <viewpoints />
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{EC3973BC-F4F1-4EFB-BFFD-8174EFD23BEB}' />
     </window>
   </windows>

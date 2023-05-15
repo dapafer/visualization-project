@@ -30,12 +30,12 @@ El proyecto cuenta con los siguientes archivos principales:
 ### **Objetivo principal.**
 Principalmente, vamos a hacer un Análisis Exploratorio de los Datos (EDA), el cual consistirá en el comportamiento de venta de un supermercado, teniendo los datos de una quincena, concretamente del 1 al 15 de mayo de 2023. Con ello, vamos a sacar conclusiones a través de los datos proporcionados de venta, para analizar varios factores, a mencionar:
 
-- Facturación total en la quincena por día.
+- Facturación total por fecha
 - Facturación total por Categoría.
 - Facturación total por Subcategoría.
-- Productos por Categoría.
+- Cantidad de productos por Categoría.
 - Facturación individual por Categoría.
-- Facturación por Producto.
+- Facturación total por Producto.
 - Cantidad de venta individual por Categoría.
 
 A continuación, detallamos las visualizaciones más relevantes para poder sacar conclusiones acerca del comportamiento de venta en la mencionada franja de fechas.
@@ -43,7 +43,16 @@ A continuación, detallamos las visualizaciones más relevantes para poder sacar
 ---
 <a name="fact_tot"/>
 
-### 🔄 **Facturación total.**
+### **Facturación total.**
+
+<img src='https://github.com/dapafer/visualization-project/blob/main/images/fact_tot.png'/>
+
+Podemos observar la facturación total desglosada por cada día, de la quincena que hemos elegido como muestra de datos. Aquí se puede observar la falta de datos para ciertos días, siendo domingos y el día 1 de mayo, el cual fue festivo. También observamos que la venta se concentra en ciertos días, siendo similar la venta en:
+- Lunes y viernes.
+- Martes, miércoles y jueves.
+- Sabado.
+Existe una excepción en esta muestra, y es el 15 de mayo, siendo festivo en Madrid capital, pero no en la localidad del supermercado. Observamos por tanto una tendencia mayor de venta en ese día por dicho factor.
+
 
 
 ---
