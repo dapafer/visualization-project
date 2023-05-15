@@ -10,13 +10,15 @@ Este proyecto tiene como objetivo realizar un proceso ETL, para posteriormente e
 - [Contenido.](#cont)
 - [Objetivo principal.](#obj_princ)
 - [Facturación total.](#fact_tot)
--
+- [Facturación total por Subcategoría.](#fact_tot_sub)
+- [Productos por Categoría.](#prod_cat)
 - [Conclusiones.](#conc)
 
 ---
 <a name="cont"/>
 
 ### 📉 **Contenido.**
+
 El proyecto cuenta con los siguientes archivos principales:
 
 - `data_to_workbench.ipynb`: notebook donde se realiza la conexión con la base de datos y se insertan las tablas generadas por notebooks anteriores.
@@ -28,6 +30,7 @@ El proyecto cuenta con los siguientes archivos principales:
 <a name="obj_princ"/>
 
 ### **Objetivo principal.**
+
 Principalmente, vamos a hacer un Análisis Exploratorio de los Datos (EDA), el cual consistirá en el comportamiento de venta de un supermercado, teniendo los datos de una quincena, concretamente del 1 al 15 de mayo de 2023. Con ello, vamos a sacar conclusiones a través de los datos proporcionados de venta, para analizar varios factores, a mencionar:
 
 - Facturación total por fecha
@@ -51,12 +54,41 @@ Podemos observar la facturación total desglosada por cada día, de la quincena 
 - Lunes y viernes.
 - Martes, miércoles y jueves.
 - Sabado.
-Existe una excepción en esta muestra, y es el 15 de mayo, siendo festivo en Madrid capital, pero no en la localidad del supermercado. Observamos por tanto una tendencia mayor de venta en ese día por dicho factor.
+Existe una excepción en esta muestra, el 15 de mayo, siendo festivo en Madrid capital, pero no en la localidad del supermercado. Observamos por tanto una tendencia mayor de venta en ese día por dicho factor.
 
+---
+<a name="fact_tot_sub"/>
 
+### **Facturación total por Subcategoría.**
+
+<img src='https://github.com/dapafer/visualization-project/blob/main/images/fact_tot_sub.png'/>
+
+Aquí tenemos desglosada la facturación total, englobada por categoría, y definida por subcategoría. Se puede observar el peso relevante que tiene la categoría "Verdura", frente a las otras dos, seguida por la de "Fruta", dejando la categoría de "Ensaladas" como menos relevante.
+
+También, podemos generar conclusiones acerca de la cantidad facturada en cada una de las subcategorías. A destacar en "Fruta":
+- Fruta tropical.
+- Melón y Sandía.
+Se puede observar la tendencia de temporalidad hacia frutas de verano, así como una subcategoría que engloba bastantes referencias como es la de "Fruta tropical", siendo esto último observable en otras visualizaciones.
+
+Añadir también el peso relevante de las siguientes subcategorías de "Verdura":
+- Cebolla y ajo.
+- Otras verduras y hortalizas.
+- Patata.
+- Tomate.
+Aquí se observa el peso relevante de productos de consumo más generalista bajo esta categoría, siendo una tendencia global a lo largo del año, y no limitada a una época concreta.
+
+---
+<a name="prod_cat"/>
+
+### **Productos por Categoría.**
+
+<img src='https://github.com/dapafer/visualization-project/blob/main/images/prod_cat.png'/>
+
+*
 
 ---
 <a name="conc"/>
 
 ### ❗️ **Conclusiones.**
 
+*
